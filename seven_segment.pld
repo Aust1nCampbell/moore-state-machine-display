@@ -1,0 +1,29 @@
+Name     lab_6;
+PartNo   ATF16V8B;
+Date     None;
+Revision 01;
+Designer Austin;
+Company  UTC;
+Assembly None;
+Location None;
+Device   G16V8;
+
+PIN 2  = A;
+PIN 3  = B;
+PIN 4  = C;
+
+PIN 13 = a;
+PIN 14 = b;
+PIN 15 = c;
+PIN 16 = d;
+PIN 17 = e;
+PIN 18 = f;
+PIN 19 = g;
+
+a = (B & C) # (A & B);
+b = (!A & C) # (!B & C) # (A & B & !C);
+c = (!A) # C;
+d = (!A & !B & !C) # (A & B) # (A & C);
+e = (!C) # (!A & B);
+f = (!A & !B & !C) # (B & C);
+g = A # B # !C;
